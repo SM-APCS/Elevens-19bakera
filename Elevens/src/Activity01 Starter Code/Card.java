@@ -47,7 +47,7 @@ public class Card {
 	 * @return this <code>Card's</code> suit.
 	 */
 	public String suit() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		return suit;
    }
 
 	/**
@@ -55,7 +55,7 @@ public class Card {
 	 * @return this <code>Card's</code> rank.
 	 */
 	public String rank() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		return rank;
 	}
 
    /**
@@ -73,8 +73,16 @@ public class Card {
 	 *         false otherwise.
 	 */
 	public boolean matches(Card otherCard) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-	}
+		Card mine = (myRank, mySuit, myPoints);
+                if(myRank.equals(otherCard.rank) && mySuit.equals(otherCard.suit) && myPoints.equals(otherCard.points))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+        }
 
 	/**
 	 * Converts the rank, suit, and point value into a string in the format
@@ -88,6 +96,6 @@ public class Card {
 	 */
 	@Override
 	public String toString() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		String.system.out.println(rank + " of " + suit + " is point value: " + pointValue);
 	}
 }
